@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register for FEFO 9th</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body class="bg-gray-900 text-white font-poppins">
+    <!-- Navigation -->
+    <nav class="navbar fixed w-full z-50 py-4 px-6 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <i class="fas fa-owl owl-icon text-2xl glow-effect"></i>
+                <span class="text-xl font-bold">FEFO 9th</span>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="hover:text-amber-400 transition">Home</a>
+                <a href="index.html#about" class="hover:text-amber-400 transition">About</a>
+                <a href="index.html#highlights" class="hover:text-amber-400 transition">Highlights</a>
+                <a href="register.html" class="bg-amber-500 hover:bg-amber-600 px-4 py-2 rounded-full btn-hover">Register</a>
+            </div>
+            <button class="menu-btn md:hidden text-2xl">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="mobile-menu hidden md:hidden bg-gray-800 py-4 px-6">
+            <a href="index.html" class="block py-2 hover:text-amber-400">Home</a>
+            <a href="index.html#about" class="block py-2 hover:text-amber-400">About</a>
+            <a href="index.html#highlights" class="block py-2 hover:text-amber-400">Highlights</a>
+            <a href="register.html" class="block bg-amber-500 hover:bg-amber-600 px-4 py-2 rounded-full mt-2 text-center btn-hover">Register</a>
+        </div>
+    </nav>
+
+    <main class="min-h-screen flex items-center justify-center px-4 pt-20 pb-12">
+        <section class="w-full max-w-2xl bg-gray-800 rounded-lg shadow-xl overflow-hidden">
+            <div class="bg-amber-500 py-4 px-6">
+                <h1 class="text-2xl font-bold text-center">Register for FEFO 9th</h1>
+            </div>
+            
+            <form class="p-6 space-y-6" id="registration-form">
+                <div>
+                    <label for="full-name" class="block mb-2 font-medium">Full Name</label>
+                    <input type="text" id="full-name" name="full-name" required
+                        class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500">
+                </div>
+
+                <div>
+                    <label for="class" class="block mb-2 font-medium">Class/Grade</label>
+                    <select id="class" name="class" required
+                        class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500">
+                        <option value="" disabled selected>Select your class</option>
+                        <option value="Elementary">Elementary School</option>
+                        <option value="Middle">Middle School</option>
+                        <option value="High">High School</option>
+                        <option value="College">College/University</option>
+                        <option value="Adult">Adult</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="school" class="block mb-2 font-medium">School/Organization</label>
+                    <input type="text" id="school" name="school" required
+                        class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500">
+                </div>
+
+                <div>
+                    <label class="block mb-2 font-medium">Competition Category</label>
+                    <div class="space-y-3">
+                        <label class="flex items-center space-x-3">
+                            <input type="radio" name="category" value="Photography" class="form-radio text-amber-500">
+                            <span>Owl Photography</span>
+                        </label>
+                        <label class="flex items-center space-x-3">
+                            <input type="radio" name="category" value="Art" class="form-radio text-amber-500">
+                            <span>Owl Art</span>
+                        </label>
+                        <label class="flex items-center space-x-3">
+                            <input type="radio" name="category" value="Knowledge" class="form-radio text-amber-500">
+                            <span>Owl Knowledge Quiz</span>
+                        </label>
+                        <label class="flex items-center space-x-3">
+                            <input type="radio" name="category" value="None" class="form-radio text-amber-500">
+                            <span>Not Participating in Competitions</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div>
+                    <label for="email" class="block mb-2 font-medium">Email Address</label>
+                    <input type="email" id="email" name="email" required
+                        class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500">
+                </div>
+
+                <button type="submit" class="w-full bg-amber-500 hover:bg-amber-600 text-white font-bold py-3 px-4 rounded-lg btn-hover">
+                    Complete Registration
+                </button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-12 px-4 border-t border-gray-800">
+        <div class="container mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <div class="flex items-center space-x-2">
+                        <i class="fas fa-owl owl-icon text-2xl"></i>
+                        <span class="text-xl font-bold">FEFO 9th</span>
+                    </div>
+                    <p class="mt-2 text-gray-400">November 20, 2025</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-2xl hover:text-amber-400 transition"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-2xl hover:text-amber-400 transition"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="text-2xl hover:text-amber-400 transition"><i class="fab fa-facebook"></i></a>
+                    <a href="mailto:info@fefo-event.com" class="text-2xl hover:text-amber-400 transition"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="mt-8 text-center text-gray-500 text-sm">
+                <p>© 2025 FEFO Event. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/form-validation.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
