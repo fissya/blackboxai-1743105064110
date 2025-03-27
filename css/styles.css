@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+:root {
+    --primary: #f59e0b;
+    --secondary: #78350f;
+    --dark: #1e293b;
+    --light: #f8fafc;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--dark);
+    color: var(--light);
+    overflow-x: hidden;
+}
+
+/* Navigation Styles */
+.navbar {
+    background-color: rgba(30, 41, 59, 0.9);
+    backdrop-filter: blur(10px);
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(30, 41, 59, 0.7), rgba(30, 41, 59, 0.9)), 
+                url('../assets/images/owl-bg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Owl-themed Elements */
+.owl-icon {
+    color: var(--primary);
+    transition: all 0.3s ease;
+}
+
+/* Countdown Timer */
+.countdown {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-content {
+        flex-direction: column;
+    }
+}
