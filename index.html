@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FEFO 9th - Owl-Themed Event</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body class="bg-gray-900 text-white font-poppins">
+    <!-- Navigation -->
+    <nav class="navbar fixed w-full z-50 py-4 px-6 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <i class="fas fa-owl owl-icon text-2xl glow-effect"></i>
+                <span class="text-xl font-bold">FEFO 9th</span>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="hover:text-amber-400 transition">Home</a>
+                <a href="#about" class="hover:text-amber-400 transition">About</a>
+                <a href="#highlights" class="hover:text-amber-400 transition">Highlights</a>
+                <a href="register.html" class="bg-amber-500 hover:bg-amber-600 px-4 py-2 rounded-full btn-hover">Register</a>
+            </div>
+            <button class="menu-btn md:hidden text-2xl">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="mobile-menu hidden md:hidden bg-gray-800 py-4 px-6">
+            <a href="#home" class="block py-2 hover:text-amber-400">Home</a>
+            <a href="#about" class="block py-2 hover:text-amber-400">About</a>
+            <a href="#highlights" class="block py-2 hover:text-amber-400">Highlights</a>
+            <a href="register.html" class="block bg-amber-500 hover:bg-amber-600 px-4 py-2 rounded-full mt-2 text-center btn-hover">Register</a>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero min-h-screen flex items-center justify-center text-center px-4 pt-20">
+            <div class="container mx-auto">
+                <div class="flex justify-center mb-8">
+                    <i class="fas fa-owl text-6xl owl-eye"></i>
+                </div>
+                <h1 class="text-5xl md:text-7xl font-bold mb-6 glow-effect">FEFO 9th</h1>
+                <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">The premier owl-themed event of the year</p>
+                
+                <!-- Countdown Timer -->
+                <div class="countdown bg-gray-800 bg-opacity-70 rounded-lg p-6 max-w-2xl mx-auto mb-12">
+                    <h2 class="text-2xl mb-4">Event Starts In:</h2>
+                    <div class="flex justify-center space-x-4">
+                        <div class="text-center">
+                            <div id="countdown-days" class="text-4xl font-bold countdown-digit">00</div>
+                            <div>Days</div>
+                        </div>
+                        <div class="text-center">
+                            <div id="countdown-hours" class="text-4xl font-bold countdown-digit">00</div>
+                            <div>Hours</div>
+                        </div>
+                        <div class="text-center">
+                            <div id="countdown-minutes" class="text-4xl font-bold countdown-digit">00</div>
+                            <div>Minutes</div>
+                        </div>
+                        <div class="text-center">
+                            <div id="countdown-seconds" class="text-4xl font-bold countdown-digit">00</div>
+                            <div>Seconds</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <a href="register.html" class="inline-block bg-amber-500 hover:bg-amber-600 text-white font-bold py-3 px-8 rounded-full text-lg btn-hover">
+                    Register Now
+                </a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-20 px-4 bg-gray-800">
+            <div class="container mx-auto max-w-4xl">
+                <h2 class="text-3xl font-bold mb-12 text-center">About FEFO</h2>
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <p class="mb-4">FEFO (Fantastic Event For Owls) is an annual gathering that celebrates the wisdom and beauty of owls through various activities and competitions.</p>
+                        <p class="mb-4">This year marks our 9th edition, promising to be the most spectacular yet with new events, guest speakers, and interactive exhibits.</p>
+                        <p>The event will take place on November 20, 2025 at the Grand Owl Convention Center.</p>
+                    </div>
+                    <div class="flex justify-center">
+                        <i class="fas fa-owl text-9xl text-amber-400 owl-eye"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="py-20 px-4 bg-gray-900">
+            <div class="container mx-auto max-w-4xl">
+                <h2 class="text-3xl font-bold mb-12 text-center">What People Say</h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-gray-800 p-6 rounded-lg">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 rounded-full bg-amber-500 flex items-center justify-center mr-4">
+                                <i class="fas fa-user text-white"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold">Sarah Johnson</h3>
+                                <p class="text-gray-400 text-sm">FEFO 8th Attendee</p>
+                            </div>
+                        </div>
+                        <p>"The FEFO event was absolutely incredible! The owl exhibits were breathtaking and the workshops were so informative. Can't wait for next year!"</p>
+                    </div>
+                    <div class="bg-gray-800 p-6 rounded-lg">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 rounded-full bg-amber-500 flex items-center justify-center mr-4">
+                                <i class="fas fa-user text-white"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold">Michael Chen</h3>
+                                <p class="text-gray-400 text-sm">Owl Enthusiast</p>
+                            </div>
+                        </div>
+                        <p>"As a first-time attendee, I was blown away by the quality of presentations and the friendly community. The night owl watching tour was the highlight for me."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Event Highlights -->
+        <section id="highlights" class="py-20 px-4 bg-gray-800">
+            <div class="container mx-auto max-w-4xl">
+                <h2 class="text-3xl font-bold mb-12 text-center">Event Highlights</h2>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="bg-gray-900 p-6 rounded-lg text-center">
+                        <div class="text-amber-400 text-4xl mb-4">
+                            <i class="fas fa-binoculars"></i>
+                        </div>
+                        <h3 class="font-bold text-xl mb-2">Owl Watching</h3>
+                        <p>Guided tours to observe owls in their natural habitat with expert ornithologists.</p>
+                    </div>
+                    <div class="bg-gray-900 p-6 rounded-lg text-center">
+                        <div class="text-amber-400 text-4xl mb-4">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                        </div>
+                        <h3 class="font-bold text-xl mb-2">Workshops</h3>
+                        <p>Interactive sessions on owl conservation, photography, and species identification.</p>
+                    </div>
+                    <div class="bg-gray-900 p-6 rounded-lg text-center">
+                        <div class="text-amber-400 text-4xl mb-4">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <h3 class="font-bold text-xl mb-2">Competitions</h3>
+                        <p>Photo contests, art exhibitions, and knowledge quizzes with great prizes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-12 px-4 border-t border-gray-800">
+        <div class="container mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <div class="flex items-center space-x-2">
+                        <i class="fas fa-owl owl-icon text-2xl"></i>
+                        <span class="text-xl font-bold">FEFO 9th</span>
+                    </div>
+                    <p class="mt-2 text-gray-400">November 20, 2025</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-2xl hover:text-amber-400 transition"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-2xl hover:text-amber-400 transition"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="text-2xl hover:text-amber-400 transition"><i class="fab fa-facebook"></i></a>
+                    <a href="mailto:info@fefo-event.com" class="text-2xl hover:text-amber-400 transition"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="mt-8 text-center text-gray-500 text-sm">
+                <p>© 2025 FEFO Event. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
